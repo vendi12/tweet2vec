@@ -13,4 +13,4 @@ mkdir -p $modelpath
 
 # train
 echo "Training..."
-python word.py $traindata $valdata $modelpath
+THEANO_FLAGS='floatX=float32' python word.py $traindata $valdata $modelpath
