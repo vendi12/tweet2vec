@@ -86,7 +86,7 @@ def main(args):
         p = predict(x,x_m)
         e = encode(x,x_m)
         ranks = np.argsort(p)[:,::-1]
-
+        print np.sort(p)[:,::-1]
         for idx, item in enumerate(xr):
             out_data.append(item)
             out_pred.append(ranks[idx,:])
