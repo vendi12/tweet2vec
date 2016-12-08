@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # specify test file here
-fulltestdata="../misc/tester_example.txt"
+fulltestdata="../misc/tester_multilingual_example.txt"
 
 # specify model path here
 modelpath="model/tweet2vec/"

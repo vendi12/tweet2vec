@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # specify train and validation files here
-traindata="../misc/trainer_example.txt"
-valdata="../misc/tester_example.txt"
+traindata="../misc/trainer_multilingual_example.txt"
+valdata="../misc/tester_multilingual_example.txt"
 
 # specify model name here
 exp="tweet2vec"
