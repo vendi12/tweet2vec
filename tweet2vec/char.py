@@ -53,9 +53,9 @@ def main(train_path,val_path,save_path,num_epochs=NUM_EPOCHS):
     yt = []
     with io.open(train_path,'r',encoding='utf-8') as f:
         # count the number of unique characters in the training file
-        chars = ''.join(set(f.read()))
-        print chars
-        print len(chars)
+        # chars = ''.join(set(f.read()))
+        # print chars
+        # print len(chars)
 
         for line in f:
             (yc, Xc) = line.rstrip('\n').split('\t')
