@@ -82,7 +82,7 @@ def main(args):
         ranks = np.argsort(p)[:,::-1]
 
         for idx, item in enumerate(xr):
-            out_pred.append(' '.join([inverse_labeldict[r] for r in ranks[idx,:5]]))
+            out_pred.append(' '.join([inverse_labeldict[r] for r in ranks[idx,:5] if r != 0]))
             out_emb.append(e[idx,:])
 
     # Save
